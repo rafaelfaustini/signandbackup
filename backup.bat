@@ -6,5 +6,5 @@ set filename=<Name of the file to backup>
 set signedkey=%filename%.gpg
 
 
-gpg --batch --yes --passphrase %password% --sign %pathSource%/%filename%
+gpg --batch --yes --pinentry-mode --passphrase %password% --sign %pathSource%/%filename%
 7z a -ttar %pathDestination%/%date:/=-%.tar %pathSource%/%filename% %pathSource%/%signedkey%
