@@ -1,5 +1,5 @@
 # Sign and Backup
-Bat file that signs with gpg, and make a compressed backup file from both original file and signature file
+Bat or Shell file that signs with gpg, and make a compressed backup file from both original file and signature file
 
 ## Usage
 ```backup.bat``` 
