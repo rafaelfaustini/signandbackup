@@ -16,3 +16,12 @@ while :; do
   i=$((i + 1))
 done
   echo "${files[@]}"
+
+  echo "GPG password"
+  read pass
+  for j in "$files[@]"
+  do
+    gpg  --sign $j
+
+  done
+  tar -czvf signed.tar.gz $dir
