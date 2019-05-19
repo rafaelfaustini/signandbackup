@@ -1,12 +1,15 @@
+
 # Sign and Backup
-Bat or Shell file that signs with gpg, and make a compressed backup file from both original file and signature file
---
+Bat or Shell script that signs with gpg and makes a compressed backup file from both original file and signature file
+
+---
 ## Linux
 
 ### Usage
 
 ```./backup.sh``` 
---
+
+---
 ## Windows
 
 ### Usage
@@ -31,6 +34,8 @@ or relative paths
 set password=<GPG password>
 set filename=<Name of the file to backup>
 ```
-```set signedkey=%filename%.gpg```<br>
+```set signedkey=%filename%.gpg```
+
 There is no need to change the signedkey
---
+
+---
